@@ -1,0 +1,36 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.example-icon {
+    background-color: #643bac !important;
+    color: white;
+    border-color: transparent;
+
+}
+
+div {
+    position: relative;
+    background-color: 643bac;
+    margin: 100px 130px;
+    border-radius: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #643bac;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7cm;
+}
+
+h2 {
+    text-align: center;
+    color: #643bac;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9cm;
+}
+
+.mat-select {
+    text-align: center;
+    margin-top: auto;
+}

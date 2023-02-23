@@ -1,0 +1,50 @@
+<header>
+  <p>
+    <mat-toolbar color="primary">
+     <button mat-icon class="example-icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Know Your Flight</span>
+    <span class="example-spacer"></span>
+    <button mat-icon class="example-icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon class="example-icon">
+     <mat-icon>share</mat-icon>
+   </button>
+  </mat-toolbar>
+  </p>
+</header>
+
+<body>
+  <div>
+    <h1 mat-h1>Know your flight</h1>
+    <h2> The only place where you can see the price prediction of your flight</h2>
+    <div class="mat-select">
+      <mat-form-field appearance="fill">
+        <mat-label>Timeframe</mat-label>
+          <mat-select [(value)] = "time" (selectionChange)="callApi()">
+            
+            <mat-option value = "last_hour">Last Hour</mat-option>
+            <mat-option value = "last_day">Last Day</mat-option>
+            <mat-option value = "all">All</mat-option>
+
+          </mat-select>
+      </mat-form-field>
+    </div>
+
+
+    <div class="chartu" style="margin-top: -120px; height:350; width:350">
+      <canvas baseChart
+        [type]="'line'"
+        [data]="lineChartData"
+        [options]="lineChartOptions"
+        [legend]="lineChartLegend">
+      </canvas>   
+  </div>
+  </div>
+  
+
+
+</body>
+
